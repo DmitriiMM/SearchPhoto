@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E77975543DDF7D4E8E86DC6 /* Pods_WhiteAndFluffyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 738CBCC7B9AAD9B68BE3EF46 /* Pods_WhiteAndFluffyTest.framework */; };
 		A32E7E8B27A57C2A00E933CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E7E8A27A57C2A00E933CE /* AppDelegate.swift */; };
 		A32E7E8D27A57C2A00E933CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32E7E8C27A57C2A00E933CE /* SceneDelegate.swift */; };
 		A32E7E9427A57C2A00E933CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32E7E9327A57C2A00E933CE /* Assets.xcassets */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		347602C38B38C0638BF7B883 /* Pods-WhiteAndFluffyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteAndFluffyTest.release.xcconfig"; path = "Target Support Files/Pods-WhiteAndFluffyTest/Pods-WhiteAndFluffyTest.release.xcconfig"; sourceTree = "<group>"; };
+		738CBCC7B9AAD9B68BE3EF46 /* Pods_WhiteAndFluffyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhiteAndFluffyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32E7E8727A57C2A00E933CE /* WhiteAndFluffyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiteAndFluffyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32E7E8A27A57C2A00E933CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A32E7E8C27A57C2A00E933CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		A32E7EAA27A5815200E933CE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A32E7EAC27A5908700E933CE /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		A3A5708427A5C01700D2E760 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E5C0100B1A83FA8C1058D8A3 /* Pods-WhiteAndFluffyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteAndFluffyTest.debug.xcconfig"; path = "Target Support Files/Pods-WhiteAndFluffyTest/Pods-WhiteAndFluffyTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E77975543DDF7D4E8E86DC6 /* Pods_WhiteAndFluffyTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F24A77C7325A1C02436CD7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				738CBCC7B9AAD9B68BE3EF46 /* Pods_WhiteAndFluffyTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98DD4878996B2A837B7A002B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5C0100B1A83FA8C1058D8A3 /* Pods-WhiteAndFluffyTest.debug.xcconfig */,
+				347602C38B38C0638BF7B883 /* Pods-WhiteAndFluffyTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A32E7E7E27A57C2A00E933CE = {
 			isa = PBXGroup;
 			children = (
 				A32E7E8927A57C2A00E933CE /* WhiteAndFluffyTest */,
 				A32E7E8827A57C2A00E933CE /* Products */,
+				98DD4878996B2A837B7A002B /* Pods */,
+				2F24A77C7325A1C02436CD7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A32E7E9B27A57C2A00E933CE /* Build configuration list for PBXNativeTarget "WhiteAndFluffyTest" */;
 			buildPhases = (
+				81C99947FA72CC937DC32241 /* [CP] Check Pods Manifest.lock */,
 				A32E7E8327A57C2A00E933CE /* Sources */,
 				A32E7E8427A57C2A00E933CE /* Frameworks */,
 				A32E7E8527A57C2A00E933CE /* Resources */,
+				5AB45D09C45C34CEA291E6D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +197,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AB45D09C45C34CEA291E6D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhiteAndFluffyTest/Pods-WhiteAndFluffyTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhiteAndFluffyTest/Pods-WhiteAndFluffyTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhiteAndFluffyTest/Pods-WhiteAndFluffyTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81C99947FA72CC937DC32241 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhiteAndFluffyTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A32E7E8327A57C2A00E933CE /* Sources */ = {
@@ -320,6 +389,7 @@
 		};
 		A32E7E9C27A57C2A00E933CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5C0100B1A83FA8C1058D8A3 /* Pods-WhiteAndFluffyTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,6 +417,7 @@
 		};
 		A32E7E9D27A57C2A00E933CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 347602C38B38C0638BF7B883 /* Pods-WhiteAndFluffyTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
