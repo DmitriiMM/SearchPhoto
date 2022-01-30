@@ -44,10 +44,6 @@ class CollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let imageToLoad = selectedImage?.photo {
-            imageView.image = imageToLoad
-        }
-        
         func setupSearchBar() {
             searchController.searchResultsUpdater = self
             searchController.obscuresBackgroundDuringPresentation = false
@@ -118,7 +114,7 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         let vc = DetailViewController()
         
-        vc.selectedImage = photos[indexPath.row]
+        vc.selectedImage?.photo = Array(photos.values)[indexPath.row].image!
         navigationController?.pushViewController(vc, animated: true)
     }
 }

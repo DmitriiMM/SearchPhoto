@@ -8,5 +8,6 @@ target 'WhiteAndFluffyTest' do
   # Pods for WhiteAndFluffyTest
 
   pod 'Alamofire'
+  pod 'Nuke'
 
 end

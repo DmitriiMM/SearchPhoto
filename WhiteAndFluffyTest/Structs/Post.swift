@@ -9,6 +9,6 @@ import Foundation
 import UIKit
 
 struct Post {
-    let photo: UIImage
+    var photo: UIImage
     let author: String
 }
